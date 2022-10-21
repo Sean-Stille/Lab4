@@ -2,7 +2,9 @@
 
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
+    public static IBusinessLogic ibl = new BusinessLogic();
+
+    public static MauiApp CreateMauiApp()
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder

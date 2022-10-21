@@ -45,4 +45,15 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Npgsql" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Npgsql" Version="6.0.7" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\lab4\lab4.csproj" />
+	</ItemGroup>
 </Project>
